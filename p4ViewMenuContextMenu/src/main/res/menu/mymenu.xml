@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:id="@+id/group0">
+        <item android:title="@string/item7"
+              android:id="@+id/Item7"
+              android:orderInCategory="7"/>
+        <item android:title="@string/item6"
+              android:id="@+id/Item6"
+              android:orderInCategory="6"/>
+        <item android:title="@string/item5"
+              android:id="@+id/Item5"
+              android:orderInCategory="5"/>
+        <item android:title="@string/item4"
+              android:id="@+id/Item4"
+              android:orderInCategory="4"/>
+    </group>
+    <group android:id="@+id/group1">
+
+        <item android:title="@string/item1"
+            android:id="@+id/Item1"
+            android:orderInCategory="1"/>
+
+      <item android:title="@string/item2"
+            android:id="@+id/Item2"
+            android:orderInCategory="2"/>
+
+      <item android:title="@string/item3"
+            android:id="@+id/Item3"
+            android:orderInCategory="3"/>
+
+    </group>
+
+
+</menu>

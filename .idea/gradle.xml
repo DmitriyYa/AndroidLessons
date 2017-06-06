@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/p16AddViewInCode" />
+            <option value="$PROJECT_DIR$/p18dynamiclayout" />
+            <option value="$PROJECT_DIR$/p20simpleanimation" />
+            <option value="$PROJECT_DIR$/p21twoactivity" />
+            <option value="$PROJECT_DIR$/p23activitylifecycle" />
+            <option value="$PROJECT_DIR$/p24livecycletwoactivity" />
+            <option value="$PROJECT_DIR$/p26intentfilter" />
+            <option value="$PROJECT_DIR$/p27getintentaction" />
+            <option value="$PROJECT_DIR$/p28extrastransferringdatausingintent" />
+            <option value="$PROJECT_DIR$/p29simple_activity_result" />
+            <option value="$PROJECT_DIR$/p30_activity_result" />
+            <option value="$PROJECT_DIR$/p31_simple_intents" />
+            <option value="$PROJECT_DIR$/p32_simple_browser" />
+            <option value="$PROJECT_DIR$/p4ViewMenuContextMenu" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

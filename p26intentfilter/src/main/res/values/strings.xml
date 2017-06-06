@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">P26IntentFilter</string>
+    <string name="buttontime">Time</string>
+    <string name="buttondate">Date</string>
+</resources>

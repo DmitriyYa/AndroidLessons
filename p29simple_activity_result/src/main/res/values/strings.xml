@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">P29SimpleActivityResult</string>
+    <string name="getName">Получить имя</string>
+</resources>

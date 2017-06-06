@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidLessons.iml" filepath="$PROJECT_DIR$/AndroidLessons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" filepath="$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" filepath="$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" filepath="$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p21twoactivity/p21twoactivity.iml" filepath="$PROJECT_DIR$/p21twoactivity/p21twoactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p23activitylifecycle/p23activitylifecycle.iml" filepath="$PROJECT_DIR$/p23activitylifecycle/p23activitylifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p24livecycletwoactivity/p24livecycletwoactivity.iml" filepath="$PROJECT_DIR$/p24livecycletwoactivity/p24livecycletwoactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p26intentfilter/p26intentfilter.iml" filepath="$PROJECT_DIR$/p26intentfilter/p26intentfilter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p27getintentaction/p27getintentaction.iml" filepath="$PROJECT_DIR$/p27getintentaction/p27getintentaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p28extrastransferringdatausingintent/p28extrastransferringdatausingintent.iml" filepath="$PROJECT_DIR$/p28extrastransferringdatausingintent/p28extrastransferringdatausingintent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p29simple_activity_result/p29simple_activity_result.iml" filepath="$PROJECT_DIR$/p29simple_activity_result/p29simple_activity_result.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" filepath="$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" filepath="$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" filepath="$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" filepath="$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Прлж</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+    <string name="TextSize">Text size</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="item4">Item4</string>
+    <string name="item5">Item5</string>
+    <string name="item6">Item6</string>
+    <string name="item7">Item7</string>
+    <string name="text_color">Text color</string>
+
+</resources>
