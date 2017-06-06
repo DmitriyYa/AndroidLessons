@@ -28,5 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ya.ru"));
         startActivity(intent);
+
+
     }
 }
