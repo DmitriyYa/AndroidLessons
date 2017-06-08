@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 //    http://startandroid.ru/ru/uroki/vse-uroki-spiskom/72-urok-32-pishem-prostoj-brauzer.html
 
 // В этом уроке:
@@ -20,13 +20,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button= (Button) findViewById(R.id.button);
+        button = (Button) findViewById(R.id.button);
         button.setOnClickListener(this);
     }
 
+//    Итак, мы по нажатию на кнопку запускаем Intent, который означает,
+// что мы хотим просмотреть сайт http://www.ya.ru.
     @Override
     public void onClick(View v) {
-        Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ya.ru"));
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ya.ru"));
         startActivity(intent);
 
 

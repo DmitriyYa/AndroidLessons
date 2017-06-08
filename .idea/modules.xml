@@ -17,6 +17,8 @@
       <module fileurl="file://$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" filepath="$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" />
       <module fileurl="file://$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" filepath="$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" filepath="$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p33_shared_preferences/p33_shared_preferences.iml" filepath="$PROJECT_DIR$/p33_shared_preferences/p33_shared_preferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p34_simple_sqlite/p34_simple_sqlite.iml" filepath="$PROJECT_DIR$/p34_simple_sqlite/p34_simple_sqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" filepath="$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" />
     </modules>
   </component>

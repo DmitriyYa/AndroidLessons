@@ -1,5 +1,6 @@
 package com.example.p32simplebrowser;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,10 +14,12 @@ public class BrowserActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_browser);
 
-        WebView webView= (WebView) findViewById(R.id.webView);
+        WebView webView = (WebView) findViewById(R.id.webView);
         webView.setWebViewClient(new WebViewClient());
 
-        Uri data=getIntent().getData();
+        Intent intent = getIntent();
+        Uri data = intent.getData();
+
         webView.loadUrl(data.toString());
     }
 }
