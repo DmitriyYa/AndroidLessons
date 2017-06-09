@@ -17,9 +17,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnAdd;
     Button btnRead;
     Button btnClean;
+    Button btnUpdate;
+    Button btnDelete;
 
     EditText editTextName;
     EditText editTextEmail;
+    EditText editId;
+
 
     DBHelper dbHelper;
 
@@ -37,8 +41,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnClean = (Button) findViewById(R.id.btnClear);
         btnClean.setOnClickListener(this);
 
+        btnUpdate = (Button) findViewById(R.id.btnUpd);
+        btnUpdate.setOnClickListener(this);
+
+        btnDelete = (Button) findViewById(R.id.btnDel);
+        btnDelete.setOnClickListener(this);
+
         editTextName = (EditText) findViewById(R.id.etName);
         editTextEmail = (EditText) findViewById(R.id.etEmail);
+        editId = (EditText) findViewById(R.id.etID);
 
         // создаем объект для создания и управления версиями БД
         dbHelper = new DBHelper(this);
@@ -55,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // получаем данные из полей ввода
         String name = editTextName.getText().toString();
         String email = editTextEmail.getText().toString();
+        String id = editId.getText().toString();
 
         // подключаемся к БД
         //с помощью метода getWritableDatabase подключаемся к БД и получаем объект SQLiteDatabase.
@@ -83,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // Нам это сейчас не нужно, поэтому передаем null.
                 // Метод insert возвращает ID вставленной строки, мы его сохраняем в rowID и выводим в лог.
                 long rowId = db.insert("mytable", null, contentValues);
-                Log.d(LOG_TAG, "--- rows in mytable: ---");
+                Log.d(LOG_TAG, " row insert, ID: " + rowId);
                 break;
 
             case R.id.btnRead:
@@ -124,8 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     //С помощью метода moveToNext мы перебираем все строки в Cursor пока не добираемся до последней.
                     // Если же записей не было, то выводим в лог соответствующее сообщение – 0 rows.
                     while (cursor.moveToNext());
-                }
-                else Log.d(LOG_TAG," 0 rows");
+                } else Log.d(LOG_TAG, " 0 rows");
                 cursor.close();
                 break;
 
@@ -134,10 +145,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 // удаляем все записи
                 //Метод delete удаляет записи.
-                // На вход передаем имя таблицы и null в качестве условий для удаления,
-                // а значит удалится все. Метод возвращает кол-во удаленных записей.
-                int clearCount =db.delete("mytable",null,null);
+                // На вход передаем имя таблицы и null в качестве условий для удаления а значит удалится все.
+                // Метод возвращает кол-во удаленных записей.
+                int clearCount = db.delete("mytable", null, null);
                 Log.d(LOG_TAG, "deleted rows count = " + clearCount);
+                break;
+            case R.id.btnUpd:
+                if (id.equalsIgnoreCase("")) {
+                    break;
+                }
+                Log.d(LOG_TAG, "--- Update mytable: ---");
+
+                // подготовим значения для обновления
+                contentValues.put("name", name);
+                contentValues.put("email", email);
+
+                // обновляем по id
+                //Для этого используется метод update.
+                // На вход ему подается имя таблицы, заполненный ContentValues с значениями для обновления,
+                // строка условия (Where) и массив аргументов для строки условия.
+                // В строке условия я использовал знак ?.
+                // При запросе к БД вместо этого знака будет подставлено значение из массива аргументов,
+                // в нашем случае это – значение переменной id.
+                // Если знаков ? в строке условия несколько, то им будут сопоставлены значения из массива по порядку.
+                // Метод update возвращает нам кол-во обновленных записей, которое мы выводим в лог.
+                int updateCount = db.update("mytable", contentValues, "id=?", new String[]{id});
+                Log.d(LOG_TAG, "updated rows count = " + updateCount);
+                break;
+
+            case R.id.btnDel:
+                if (id.equalsIgnoreCase("")) {
+                    break;
+                }
+                Log.d(LOG_TAG, "--- Delete from mytable: ---");
+
+                // удаляем по id
+                //Метод delete возвращает кол-во удаленных строк, которое мы выводим в лог.
+                int delCount = db.delete("mytable", "id= " + id, null);
+                //Обратите внимание, что условия и для update и для delete у меня одинаковые,
+                // а именно id = значение из поля etID. Но реализовал я их немного по-разному.
+                // Для update использовал символ ? в строке условия и массив аргументов.
+                // А для delete вставил значение сразу в строку условия.
+                // Таким образом, я просто показал способы формирования условия.
+                // А вы уже используйте тот, что больше нравится или лучше в конкретной ситуации.
+
+                Log.d(LOG_TAG, "deleted rows count = " + delCount);
                 break;
         }
         // закрываем подключение к БД

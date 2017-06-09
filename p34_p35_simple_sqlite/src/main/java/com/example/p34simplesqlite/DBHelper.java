@@ -1,7 +1,6 @@
 package com.example.p34simplesqlite;
 
 import android.content.Context;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -27,11 +26,9 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         Log.d(LOG_TAG, "--- onCreate database ---");
+
         // создаем таблицу с полями
-        db.execSQL("create table mytable ("
-                + "id integer primary key autoincrement,"
-                + "name text,"
-                + "email text" + ");");
+        db.execSQL("create table mytable (id integer primary key autoincrement, name text, email text);");
     }
 
 //    onUpgrade - будет вызван в случае, если мы пытаемся подключиться к БД более новой версии, чем существующая
