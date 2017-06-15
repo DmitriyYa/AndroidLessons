@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidLessons.iml" filepath="$PROJECT_DIR$/AndroidLessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p04_viewMenu_contextMenu/p04_viewMenu_contextMenu.iml" filepath="$PROJECT_DIR$/p04_viewMenu_contextMenu/p04_viewMenu_contextMenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" filepath="$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" filepath="$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" filepath="$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" />
@@ -19,7 +20,13 @@
       <module fileurl="file://$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" filepath="$PROJECT_DIR$/p32_simple_browser/p32_simple_browser.iml" />
       <module fileurl="file://$PROJECT_DIR$/p33_shared_preferences/p33_shared_preferences.iml" filepath="$PROJECT_DIR$/p33_shared_preferences/p33_shared_preferences.iml" />
       <module fileurl="file://$PROJECT_DIR$/p34_p35_simple_sqlite/p34_p35_simple_sqlite.iml" filepath="$PROJECT_DIR$/p34_p35_simple_sqlite/p34_p35_simple_sqlite.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" filepath="$PROJECT_DIR$/p4ViewMenuContextMenu/p4ViewMenuContextMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p36_sqlite_query/p36_sqlite_query.iml" filepath="$PROJECT_DIR$/p36_sqlite_query/p36_sqlite_query.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p37_sqlite_inner_join/p37_sqlite_inner_join.iml" filepath="$PROJECT_DIR$/p37_sqlite_inner_join/p37_sqlite_inner_join.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p38_sqlite_transaction/p38_sqlite_transaction.iml" filepath="$PROJECT_DIR$/p38_sqlite_transaction/p38_sqlite_transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p39_sqlite_on_upgrade_db/p39_sqlite_on_upgrade_db.iml" filepath="$PROJECT_DIR$/p39_sqlite_on_upgrade_db/p39_sqlite_on_upgrade_db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p40_layout_inflater/p40_layout_inflater.iml" filepath="$PROJECT_DIR$/p40_layout_inflater/p40_layout_inflater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p41_layout_inflater_list/p41_layout_inflater_list.iml" filepath="$PROJECT_DIR$/p41_layout_inflater_list/p41_layout_inflater_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p42_simple_list/p42_simple_list.iml" filepath="$PROJECT_DIR$/p42_simple_list/p42_simple_list.iml" />
     </modules>
   </component>
 </project>

@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/p04_viewMenu_contextMenu" />
             <option value="$PROJECT_DIR$/p16AddViewInCode" />
             <option value="$PROJECT_DIR$/p18dynamiclayout" />
             <option value="$PROJECT_DIR$/p20simpleanimation" />
@@ -25,7 +26,13 @@
             <option value="$PROJECT_DIR$/p32_simple_browser" />
             <option value="$PROJECT_DIR$/p33_shared_preferences" />
             <option value="$PROJECT_DIR$/p34_p35_simple_sqlite" />
-            <option value="$PROJECT_DIR$/p4ViewMenuContextMenu" />
+            <option value="$PROJECT_DIR$/p36_sqlite_query" />
+            <option value="$PROJECT_DIR$/p37_sqlite_inner_join" />
+            <option value="$PROJECT_DIR$/p38_sqlite_transaction" />
+            <option value="$PROJECT_DIR$/p39_sqlite_on_upgrade_db" />
+            <option value="$PROJECT_DIR$/p40_layout_inflater" />
+            <option value="$PROJECT_DIR$/p41_layout_inflater_list" />
+            <option value="$PROJECT_DIR$/p42_simple_list" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
