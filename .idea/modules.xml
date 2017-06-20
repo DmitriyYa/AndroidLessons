@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidLessons.iml" filepath="$PROJECT_DIR$/AndroidLessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mwork/mwork.iml" filepath="$PROJECT_DIR$/mwork/mwork.iml" />
       <module fileurl="file://$PROJECT_DIR$/p04_viewMenu_contextMenu/p04_viewMenu_contextMenu.iml" filepath="$PROJECT_DIR$/p04_viewMenu_contextMenu/p04_viewMenu_contextMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p136_cursor_loader/p136_cursor_loader.iml" filepath="$PROJECT_DIR$/p136_cursor_loader/p136_cursor_loader.iml" />
       <module fileurl="file://$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" filepath="$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" filepath="$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" filepath="$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" />
@@ -27,6 +29,16 @@
       <module fileurl="file://$PROJECT_DIR$/p40_layout_inflater/p40_layout_inflater.iml" filepath="$PROJECT_DIR$/p40_layout_inflater/p40_layout_inflater.iml" />
       <module fileurl="file://$PROJECT_DIR$/p41_layout_inflater_list/p41_layout_inflater_list.iml" filepath="$PROJECT_DIR$/p41_layout_inflater_list/p41_layout_inflater_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/p42_simple_list/p42_simple_list.iml" filepath="$PROJECT_DIR$/p42_simple_list/p42_simple_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p43_simple_list_choice/p43_simple_list_choice.iml" filepath="$PROJECT_DIR$/p43_simple_list_choice/p43_simple_list_choice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p44_simple_list_events/p44_simple_list_events.iml" filepath="$PROJECT_DIR$/p44_simple_list_events/p44_simple_list_events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p45_expandable_list/p45_expandable_list.iml" filepath="$PROJECT_DIR$/p45_expandable_list/p45_expandable_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p46_expandable_list_events/p46_expandable_list_events.iml" filepath="$PROJECT_DIR$/p46_expandable_list_events/p46_expandable_list_events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p48_simple_adapter/p48_simple_adapter.iml" filepath="$PROJECT_DIR$/p48_simple_adapter/p48_simple_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p49_simple_adapter_custom1/p49_simple_adapter_custom1.iml" filepath="$PROJECT_DIR$/p49_simple_adapter_custom1/p49_simple_adapter_custom1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p50_simple_adapter_custom2/p50_simple_adapter_custom2.iml" filepath="$PROJECT_DIR$/p50_simple_adapter_custom2/p50_simple_adapter_custom2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p51_simple_adapter_data/p51_simple_adapter_data.iml" filepath="$PROJECT_DIR$/p51_simple_adapter_data/p51_simple_adapter_data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p52_simple_cursor_adapter/p52_simple_cursor_adapter.iml" filepath="$PROJECT_DIR$/p52_simple_cursor_adapter/p52_simple_cursor_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p58_time_picker_dialog/p58_time_picker_dialog.iml" filepath="$PROJECT_DIR$/p58_time_picker_dialog/p58_time_picker_dialog.iml" />
     </modules>
   </component>
 </project>

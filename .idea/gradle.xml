@@ -10,7 +10,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/mwork" />
             <option value="$PROJECT_DIR$/p04_viewMenu_contextMenu" />
+            <option value="$PROJECT_DIR$/p136_cursor_loader" />
             <option value="$PROJECT_DIR$/p16AddViewInCode" />
             <option value="$PROJECT_DIR$/p18dynamiclayout" />
             <option value="$PROJECT_DIR$/p20simpleanimation" />
@@ -33,6 +35,16 @@
             <option value="$PROJECT_DIR$/p40_layout_inflater" />
             <option value="$PROJECT_DIR$/p41_layout_inflater_list" />
             <option value="$PROJECT_DIR$/p42_simple_list" />
+            <option value="$PROJECT_DIR$/p43_simple_list_choice" />
+            <option value="$PROJECT_DIR$/p44_simple_list_events" />
+            <option value="$PROJECT_DIR$/p45_expandable_list" />
+            <option value="$PROJECT_DIR$/p46_expandable_list_events" />
+            <option value="$PROJECT_DIR$/p48_simple_adapter" />
+            <option value="$PROJECT_DIR$/p49_simple_adapter_custom1" />
+            <option value="$PROJECT_DIR$/p50_simple_adapter_custom2" />
+            <option value="$PROJECT_DIR$/p51_simple_adapter_data" />
+            <option value="$PROJECT_DIR$/p52_simple_cursor_adapter" />
+            <option value="$PROJECT_DIR$/p58_time_picker_dialog" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

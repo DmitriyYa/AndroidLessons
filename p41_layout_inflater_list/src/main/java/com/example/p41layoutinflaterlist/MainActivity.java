@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
             // Через linLayout заполнять TextView необходимым нам текстом было бы затруднительно.
             // Поэтому мы получаем пункт item (FrameLayout), заполняем его TextView данными
             // и только потом помещаем к остальным пунктам в linLayout методом addView.
+
             View item = layoutInflater.inflate(R.layout.item, linearLayout, false);
 
             TextView tvName = (TextView) item.findViewById(R.id.tvName);

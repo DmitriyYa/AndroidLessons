@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MWork</string>
+    <string name="ListDayJobs">список дел на день</string>
+    <string name="ListAllJobs">список всех дел</string>
+    <string name="createJob">создать задачу</string>
+    <string name="MyJobs">мои задачи</string>
+    <string name="ControlJobs">контролирую задачи</string>
+    <string name="Analisis">Анализ</string>
+    <string name="Calc">Калькулятор</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
