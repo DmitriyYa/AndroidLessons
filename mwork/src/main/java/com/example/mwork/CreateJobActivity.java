@@ -1,39 +1,45 @@
 package com.example.mwork;
 
 import android.app.DatePickerDialog;
-import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateUtils;
-import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 import java.util.Calendar;
 
+
 public class CreateJobActivity extends AppCompatActivity implements View.OnClickListener {
 
-    final static String LOG_TAG = "myLog";
+    private static final String[] data = new String[]{
+            "не приступал",
+            "в работе",
+            "выполнена",
+            "приостановленна",
+            "отменена"};
 
-    RadioButton rbI;
-    RadioButton rbNotI;
-//    RadioButton rbGroup;
+    public static String[] getData() {
+        return data;
+    }
+
+
+    Spinner spCreate;
 
     EditText etShortDescription;
     EditText etLongDescription;
-
-    RadioButton rbPrioritetMedium;
-    RadioButton rbPrioritetStrong;
 
     TextView tvTime;
     TextView tvDate;
@@ -44,8 +50,9 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
     Button btnSave;
     Button btnCancel;
 
-    DBHelper dbHelper;
     Intent intent;
+    DB db;
+    SQLiteDatabase mDB;
 
     Calendar dateAndTime = Calendar.getInstance();
 
@@ -54,15 +61,8 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_job);
 
-        rbI = (RadioButton) findViewById(R.id.rbI);
-        rbNotI = (RadioButton) findViewById(R.id.rbNotI);
-//        rbGroup = (RadioButton) findViewById(R.id.rbGroup);
-
         etShortDescription = (EditText) findViewById(R.id.etShotDescription);
         etLongDescription = (EditText) findViewById(R.id.etLongDescription);
-
-        rbPrioritetMedium = (RadioButton) findViewById(R.id.rbPrioritetMedium);
-        rbPrioritetStrong = (RadioButton) findViewById(R.id.rbPrioritetStrong);
 
         tvTime = (TextView) findViewById(R.id.tvTime);
         tvDate = (TextView) findViewById(R.id.tvDate);
@@ -79,8 +79,26 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
         btnSetDate = (Button) findViewById(R.id.btnSetDate);
         btnSetDate.setOnClickListener(this);
 
-        // создаем объект для создания и управления версиями БД
-        dbHelper = new DBHelper(this);
+
+//SPINNER-------------------------------------------------------------------------------------------
+
+        // адаптер
+        //Создаем адаптер, используем simple_spinner_item в качестве layout для отображения Spinner на экране
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, data);
+
+        //А методом setDropDownViewResource указываем какой layout использовать для прорисовки пунктов выпадающего списка.
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+        spCreate = (Spinner) findViewById(R.id.spinnerCreate);
+        spCreate.setAdapter(adapter);
+
+        // выделяем элемент
+        spCreate.setSelection(0);
+//--------------------------------------------------------------------------------------------------
+
+
+        db = new DB(this);
+        mDB = db.open();
 
     }
 
@@ -91,67 +109,40 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
         ContentValues contentValues = new ContentValues();
 
         // получаем данные из полей ввода
-        String executor;
         String shotDesc = etShortDescription.getText().toString();
         String longDesc = etLongDescription.getText().toString();
-        String prioritet;
         String time = tvTime.getText().toString();
         String date = tvDate.getText().toString();
+        String status = spCreate.getSelectedItem().toString();
 
-
-        // подключаемся к БД
-        SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         switch (v.getId()) {
             case R.id.btnSave:
-                Log.d(LOG_TAG, "--- Insert in job: ---");
-
                 //проверяем установлена ли дата и время выполнения задачи
-                if (date.equals("")) {
-                    Toast.makeText(this, "заполните дату выполнения задачи", Toast.LENGTH_SHORT).show();
+                if (shotDesc.equals("")) {
+                    Toast.makeText(this, "Заполните краткое описание задачи", Toast.LENGTH_SHORT).show();
                     break;
                 }
                 if (time.equals("")) {
-                    Toast.makeText(this, "заполните время выполнения задачи", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Заполните время выполнения задачи", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+                if (date.equals("")) {
+                    Toast.makeText(this, "Заполните дату выполнения задачи", Toast.LENGTH_SHORT).show();
                     break;
                 }
 
-                //выясняем исполнителя
-                if (rbI.isChecked()) {
-                    executor = rbI.getText().toString();
-                } else {
-                    executor = rbNotI.getText().toString();
-                }
-//                else {
-//                    executor = rbGroup.getText().toString();
-//                }
+                db.addRec(shotDesc, longDesc, time, date, status);
 
-                //выясняем приоритет
-                if (rbPrioritetMedium.isChecked()) {
-                    prioritet = rbPrioritetMedium.getText().toString();
-                } else {
-                    prioritet = rbPrioritetStrong.getText().toString();
-                }
-
-                contentValues.put("executor", executor);
-                contentValues.put("shortDescription", shotDesc);
-                contentValues.put("longDescription", longDesc);
-                contentValues.put("prioritet", prioritet);
-                contentValues.put("time", time);
-                contentValues.put("date", date);
-
-                long rowId = db.insert("job", null, contentValues);
-                Log.d(LOG_TAG, " row insert, ID: " + rowId);
-
-                //переключемся в MyJobsActivity
-                intent = new Intent(this, MyJobsActivity.class);
+                //переключемся в MainActivity
+                intent = new Intent(this, MainActivity.class);
                 setResult(RESULT_OK, intent);
                 finish();
                 break;
 
             case R.id.btnCancel:
-                //переключемся в MyJobsActivity
-                intent = new Intent(this, MyJobsActivity.class);
+                //переключемся в MainActivity
+                intent = new Intent(this, MainActivity.class);
                 setResult(RESULT_CANCELED, intent);
                 finish();
                 break;
@@ -165,11 +156,16 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
                 break;
         }
 
-        // закрываем подключение к БД
-        dbHelper.close();
-
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        // закрываем подключение к БД
+        db.close();
+
+    }
 
     //    -----------------------------------------------------------------------------------------
     // отображаем диалоговое окно для выбора даты
@@ -191,14 +187,12 @@ public class CreateJobActivity extends AppCompatActivity implements View.OnClick
 
     // установка начальных времени
     private void setInitialTime() {
-
         tvTime.setText(DateUtils.formatDateTime(this,
                 dateAndTime.getTimeInMillis(), DateUtils.FORMAT_SHOW_TIME));
     }
 
     // установка начальных даты
     private void setInitialDate() {
-
         tvDate.setText(DateUtils.formatDateTime(this,
                 dateAndTime.getTimeInMillis(),
                 DateUtils.FORMAT_SHOW_DATE | DateUtils.FORMAT_SHOW_YEAR));

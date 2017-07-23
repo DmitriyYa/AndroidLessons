@@ -16,10 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".CreateJobActivity" />
-        <activity android:name=".MyJobsActivity" />
-        <activity android:name=".ControlJobsActivity" />
-        <activity android:name=".AnalisisActivity" />
-        <activity android:name=".ViewActivity" />
+        <activity
+            android:name=".ViewJobActivity"
+            android:label="@string/title_activity_edit_job"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditJobActivity"></activity>
     </application>
 
 </manifest>

@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.d(TAG, "//кнопка ОК");
                 button1.setBackgroundResource(R.color.colorTeal200);
                 textViewSize.setText("Нажата кнопка ОК");
-                Toast.makeText(this,"Надата кнопка Ок",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this,"Нажата кнопка Ок",Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.button2:
@@ -152,7 +152,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textViewColore.setTextColor(Color.RED);
                 textViewColore.setText("Text color = red");
                 break;
-
             case MENU_SIZE_22:
                 textViewSize.setTextSize(22);
                 textViewSize.setText("TExt size = 22");
@@ -165,7 +164,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textViewSize.setTextSize(30);
                 textViewSize.setText("TExt size = 30");
                 break;
-
         }
         return super.onContextItemSelected(item);
     }

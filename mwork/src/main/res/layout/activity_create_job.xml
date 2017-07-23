@@ -5,106 +5,69 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tvExecutor"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Исполнитель" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/rbI"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="я" />
-
-        <RadioButton
-            android:id="@+id/rbNotI"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="не я" />
-
-    </RadioGroup>
-
-    <TextView
         android:id="@+id/tvShotDescription"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Краткое описание" />
+        android:text="Краткое описание"
+        style="@style/TextLayaut"/>
 
     <EditText
         android:id="@+id/etShotDescription"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="" />
+        android:text=""
+        android:textSize="16sp"/>
 
     <TextView
         android:id="@+id/tvLongDescription"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Детальное описание" />
+        android:text="Детальное описание"
+        style="@style/TextLayaut"/>
 
     <EditText
         android:id="@+id/etLongDescription"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="" />
+        android:text=""
+        android:textSize="16sp"/>
 
-    <TextView
-        android:id="@+id/tvPrioritet"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="Приоритет" />
-
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="1.5"
         android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/rbPrioritetMedium"
+
+
+        <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:checked="true"
-            android:text="средний" />
+            android:text="Cтатус"
+            style="@style/TextLayaut"/>
 
-
-        <RadioButton
-            android:id="@+id/rbPrioritetStrong"
+        <Spinner
+            android:id="@+id/spinnerCreate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="высокий" />
+            android:layout_weight="1">
+        </Spinner>
 
-    </RadioGroup>
-
+    </LinearLayout>
     <TextView
         android:id="@+id/tvExecutBefor"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Выполнить до" />
-
+        android:text="Выполнить до"
+        style="@style/TextLayaut"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -114,18 +77,22 @@
         <Button
             android:text="выбрать время"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/btnSetTime"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            style="@style/StyleButton"/>
 
         <TextView
             android:id="@+id/tvTime"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="" />
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"/>
 
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -136,16 +103,19 @@
         <Button
             android:text="выбрать дату"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/btnSetDate"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            style="@style/StyleButton"/>
 
         <TextView
             android:id="@+id/tvDate"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="" />
+            android:text=""
+            android:textSize="16sp"
+            android:gravity="center"/>
 
     </LinearLayout>
 
@@ -160,13 +130,17 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="сохранить" />
+            android:text="сохранить"
+            android:gravity="center"
+            style="@style/StyleButton"/>
 
         <Button
             android:id="@+id/btnCancel"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="отмена" />
+            android:text="отмена"
+            android:gravity="center"
+            style="@style/StyleButton"/>
     </LinearLayout>
 </LinearLayout>

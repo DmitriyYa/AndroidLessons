@@ -8,4 +8,7 @@
     <string name="Analisis">Анализ</string>
     <string name="Calc">Калькулятор</string>
     <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_list_my_task">ListMyTaskActivity</string>
+    <string name="delete_record">Удалить запись</string>
+    <string name="title_activity_edit_job">EditJobActivity</string>
 </resources>

@@ -90,11 +90,14 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
 
+    //создаем Loader и даем ему на вход объект для работы с БД.
     @Override
     public Loader<Cursor> onCreateLoader(int id, Bundle args) {
         return new MyCursorLoader(this, db);
     }
 
+    //мы получаем результат работы лоадера – новый курсор с данными.
+    //Этот курсор мы отдаем адаптеру методом swapCursor.
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
         scAdapter.swapCursor(data);
@@ -114,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             this.db = db;
         }
 
+        //мы переопределяем метод loadInBackground, в котором просто получаем курсор с данными БД
         @Override
         public Cursor loadInBackground() {
             Cursor cursor = db.getAllData();

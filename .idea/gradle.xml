@@ -16,12 +16,12 @@
             <option value="$PROJECT_DIR$/p16AddViewInCode" />
             <option value="$PROJECT_DIR$/p18dynamiclayout" />
             <option value="$PROJECT_DIR$/p20simpleanimation" />
-            <option value="$PROJECT_DIR$/p21twoactivity" />
-            <option value="$PROJECT_DIR$/p23activitylifecycle" />
-            <option value="$PROJECT_DIR$/p24livecycletwoactivity" />
+            <option value="$PROJECT_DIR$/p21_two_activity" />
+            <option value="$PROJECT_DIR$/p23_activity_lifecycle" />
+            <option value="$PROJECT_DIR$/p24_livecycle_two_activity" />
             <option value="$PROJECT_DIR$/p26intentfilter" />
             <option value="$PROJECT_DIR$/p27getintentaction" />
-            <option value="$PROJECT_DIR$/p28extrastransferringdatausingintent" />
+            <option value="$PROJECT_DIR$/p28_extras_transferring_data_using_intent" />
             <option value="$PROJECT_DIR$/p29simple_activity_result" />
             <option value="$PROJECT_DIR$/p30_activity_result" />
             <option value="$PROJECT_DIR$/p31_simple_intents" />
@@ -44,7 +44,26 @@
             <option value="$PROJECT_DIR$/p50_simple_adapter_custom2" />
             <option value="$PROJECT_DIR$/p51_simple_adapter_data" />
             <option value="$PROJECT_DIR$/p52_simple_cursor_adapter" />
+            <option value="$PROJECT_DIR$/p53_simple_cursor_tree_adapter" />
+            <option value="$PROJECT_DIR$/p54_custom_adapter" />
+            <option value="$PROJECT_DIR$/p55_header_footer" />
+            <option value="$PROJECT_DIR$/p56_spinner" />
+            <option value="$PROJECT_DIR$/p57_gridview" />
             <option value="$PROJECT_DIR$/p58_time_picker_dialog" />
+            <option value="$PROJECT_DIR$/p59_date_picker_dialog" />
+            <option value="$PROJECT_DIR$/p60_alertdialog_simple" />
+            <option value="$PROJECT_DIR$/p61_alertdialog_prepare" />
+            <option value="$PROJECT_DIR$/p62_alertdialog_items" />
+            <option value="$PROJECT_DIR$/p63_alertdialog_items_single" />
+            <option value="$PROJECT_DIR$/p64_alertdialog_items_multi" />
+            <option value="$PROJECT_DIR$/p65_alertdialog_custom" />
+            <option value="$PROJECT_DIR$/p66_alertdialog_operations" />
+            <option value="$PROJECT_DIR$/p67_progress_dialog" />
+            <option value="$PROJECT_DIR$/p68_parcel" />
+            <option value="$PROJECT_DIR$/p69_parcelable" />
+            <option value="$PROJECT_DIR$/p70_save_instance_state" />
+            <option value="$PROJECT_DIR$/p71_preferences_simple" />
+            <option value="$PROJECT_DIR$/p72_preferences_simple2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

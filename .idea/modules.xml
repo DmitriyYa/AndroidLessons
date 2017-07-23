@@ -10,12 +10,12 @@
       <module fileurl="file://$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" filepath="$PROJECT_DIR$/p16AddViewInCode/p16AddViewInCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" filepath="$PROJECT_DIR$/p18dynamiclayout/p18dynamiclayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" filepath="$PROJECT_DIR$/p20simpleanimation/p20simpleanimation.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p21twoactivity/p21twoactivity.iml" filepath="$PROJECT_DIR$/p21twoactivity/p21twoactivity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p23activitylifecycle/p23activitylifecycle.iml" filepath="$PROJECT_DIR$/p23activitylifecycle/p23activitylifecycle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p24livecycletwoactivity/p24livecycletwoactivity.iml" filepath="$PROJECT_DIR$/p24livecycletwoactivity/p24livecycletwoactivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p21_two_activity/p21_two_activity.iml" filepath="$PROJECT_DIR$/p21_two_activity/p21_two_activity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p23_activity_lifecycle/p23_activity_lifecycle.iml" filepath="$PROJECT_DIR$/p23_activity_lifecycle/p23_activity_lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p24_livecycle_two_activity/p24_livecycle_two_activity.iml" filepath="$PROJECT_DIR$/p24_livecycle_two_activity/p24_livecycle_two_activity.iml" />
       <module fileurl="file://$PROJECT_DIR$/p26intentfilter/p26intentfilter.iml" filepath="$PROJECT_DIR$/p26intentfilter/p26intentfilter.iml" />
       <module fileurl="file://$PROJECT_DIR$/p27getintentaction/p27getintentaction.iml" filepath="$PROJECT_DIR$/p27getintentaction/p27getintentaction.iml" />
-      <module fileurl="file://$PROJECT_DIR$/p28extrastransferringdatausingintent/p28extrastransferringdatausingintent.iml" filepath="$PROJECT_DIR$/p28extrastransferringdatausingintent/p28extrastransferringdatausingintent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p28_extras_transferring_data_using_intent/p28_extras_transferring_data_using_intent.iml" filepath="$PROJECT_DIR$/p28_extras_transferring_data_using_intent/p28_extras_transferring_data_using_intent.iml" />
       <module fileurl="file://$PROJECT_DIR$/p29simple_activity_result/p29simple_activity_result.iml" filepath="$PROJECT_DIR$/p29simple_activity_result/p29simple_activity_result.iml" />
       <module fileurl="file://$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" filepath="$PROJECT_DIR$/p30_activity_result/p30_activity_result.iml" />
       <module fileurl="file://$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" filepath="$PROJECT_DIR$/p31_simple_intents/p31_simple_intents.iml" />
@@ -38,7 +38,26 @@
       <module fileurl="file://$PROJECT_DIR$/p50_simple_adapter_custom2/p50_simple_adapter_custom2.iml" filepath="$PROJECT_DIR$/p50_simple_adapter_custom2/p50_simple_adapter_custom2.iml" />
       <module fileurl="file://$PROJECT_DIR$/p51_simple_adapter_data/p51_simple_adapter_data.iml" filepath="$PROJECT_DIR$/p51_simple_adapter_data/p51_simple_adapter_data.iml" />
       <module fileurl="file://$PROJECT_DIR$/p52_simple_cursor_adapter/p52_simple_cursor_adapter.iml" filepath="$PROJECT_DIR$/p52_simple_cursor_adapter/p52_simple_cursor_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p53_simple_cursor_tree_adapter/p53_simple_cursor_tree_adapter.iml" filepath="$PROJECT_DIR$/p53_simple_cursor_tree_adapter/p53_simple_cursor_tree_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p54_custom_adapter/p54_custom_adapter.iml" filepath="$PROJECT_DIR$/p54_custom_adapter/p54_custom_adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p55_header_footer/p55_header_footer.iml" filepath="$PROJECT_DIR$/p55_header_footer/p55_header_footer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p56_spinner/p56_spinner.iml" filepath="$PROJECT_DIR$/p56_spinner/p56_spinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p57_gridview/p57_gridview.iml" filepath="$PROJECT_DIR$/p57_gridview/p57_gridview.iml" />
       <module fileurl="file://$PROJECT_DIR$/p58_time_picker_dialog/p58_time_picker_dialog.iml" filepath="$PROJECT_DIR$/p58_time_picker_dialog/p58_time_picker_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p59_date_picker_dialog/p59_date_picker_dialog.iml" filepath="$PROJECT_DIR$/p59_date_picker_dialog/p59_date_picker_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p60_alertdialog_simple/p60_alertdialog_simple.iml" filepath="$PROJECT_DIR$/p60_alertdialog_simple/p60_alertdialog_simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p61_alertdialog_prepare/p61_alertdialog_prepare.iml" filepath="$PROJECT_DIR$/p61_alertdialog_prepare/p61_alertdialog_prepare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p62_alertdialog_items/p62_alertdialog_items.iml" filepath="$PROJECT_DIR$/p62_alertdialog_items/p62_alertdialog_items.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p63_alertdialog_items_single/p63_alertdialog_items_single.iml" filepath="$PROJECT_DIR$/p63_alertdialog_items_single/p63_alertdialog_items_single.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p64_alertdialog_items_multi/p64_alertdialog_items_multi.iml" filepath="$PROJECT_DIR$/p64_alertdialog_items_multi/p64_alertdialog_items_multi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p65_alertdialog_custom/p65_alertdialog_custom.iml" filepath="$PROJECT_DIR$/p65_alertdialog_custom/p65_alertdialog_custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p66_alertdialog_operations/p66_alertdialog_operations.iml" filepath="$PROJECT_DIR$/p66_alertdialog_operations/p66_alertdialog_operations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p67_progress_dialog/p67_progress_dialog.iml" filepath="$PROJECT_DIR$/p67_progress_dialog/p67_progress_dialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p68_parcel/p68_parcel.iml" filepath="$PROJECT_DIR$/p68_parcel/p68_parcel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p69_parcelable/p69_parcelable.iml" filepath="$PROJECT_DIR$/p69_parcelable/p69_parcelable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p70_save_instance_state/p70_save_instance_state.iml" filepath="$PROJECT_DIR$/p70_save_instance_state/p70_save_instance_state.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p71_preferences_simple/p71_preferences_simple.iml" filepath="$PROJECT_DIR$/p71_preferences_simple/p71_preferences_simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p72_preferences_simple2/p72_preferences_simple2.iml" filepath="$PROJECT_DIR$/p72_preferences_simple2/p72_preferences_simple2.iml" />
     </modules>
   </component>
 </project>
