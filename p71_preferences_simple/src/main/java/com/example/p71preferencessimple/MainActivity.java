@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tvInfo= (TextView) findViewById(R.id.tvInfo);
+        tvInfo = (TextView) findViewById(R.id.tvInfo);
 
         // получаем SharedPreferences, которое работает с файлом настроек
-        sp= PreferenceManager.getDefaultSharedPreferences(this);
+        sp = PreferenceManager.getDefaultSharedPreferences(this);
 
         // полная очистка настроек
 //        sp.edit().clear().commit();
@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
     //При чтении используем те самые ключи, которые прописывали в xml-файле в атрибутах key.
     @Override
     protected void onResume() {
-        Boolean notif=sp.getBoolean("notif",false);
-        String addres=sp.getString("address","");
-        String text="Notification are "
-                + ((notif) ? "enable, addres = "+addres:"disable");
+        Boolean notif = sp.getBoolean("notif", false);
+        String addres = sp.getString("address", "");
+        String text = "Notification are "
+                + ((notif) ? "enable, addres = " + addres : "disable");
         tvInfo.setText(text);
         super.onResume();
     }
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
     //Мы создаем пункт меню и вешаем на него Intent - в итоге при нажатии вызовется Activity.
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuItem mi=menu.add(0,1,0,"Preferences");
-        mi.setIntent(new Intent(this,PrefActivity.class));
+        MenuItem mi = menu.add(0, 1, 0, "Preferences");
+        mi.setIntent(new Intent(this, PrefActivity.class));
         return super.onCreateOptionsMenu(menu);
     }
 }

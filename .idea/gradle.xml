@@ -64,6 +64,11 @@
             <option value="$PROJECT_DIR$/p70_save_instance_state" />
             <option value="$PROJECT_DIR$/p71_preferences_simple" />
             <option value="$PROJECT_DIR$/p72_preferences_simple2" />
+            <option value="$PROJECT_DIR$/p73_preferences_enable" />
+            <option value="$PROJECT_DIR$/p74_preferences_code" />
+            <option value="$PROJECT_DIR$/p75_files" />
+            <option value="$PROJECT_DIR$/p76_tab" />
+            <option value="$PROJECT_DIR$/p77_tab_intent" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -58,6 +58,11 @@
       <module fileurl="file://$PROJECT_DIR$/p70_save_instance_state/p70_save_instance_state.iml" filepath="$PROJECT_DIR$/p70_save_instance_state/p70_save_instance_state.iml" />
       <module fileurl="file://$PROJECT_DIR$/p71_preferences_simple/p71_preferences_simple.iml" filepath="$PROJECT_DIR$/p71_preferences_simple/p71_preferences_simple.iml" />
       <module fileurl="file://$PROJECT_DIR$/p72_preferences_simple2/p72_preferences_simple2.iml" filepath="$PROJECT_DIR$/p72_preferences_simple2/p72_preferences_simple2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p73_preferences_enable/p73_preferences_enable.iml" filepath="$PROJECT_DIR$/p73_preferences_enable/p73_preferences_enable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p74_preferences_code/p74_preferences_code.iml" filepath="$PROJECT_DIR$/p74_preferences_code/p74_preferences_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p75_files/p75_files.iml" filepath="$PROJECT_DIR$/p75_files/p75_files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p76_tab/p76_tab.iml" filepath="$PROJECT_DIR$/p76_tab/p76_tab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p77_tab_intent/p77_tab_intent.iml" filepath="$PROJECT_DIR$/p77_tab_intent/p77_tab_intent.iml" />
     </modules>
   </component>
 </project>
