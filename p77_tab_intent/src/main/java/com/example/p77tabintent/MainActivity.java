@@ -1,7 +1,6 @@
 package com.example.p77tabintent;
 
 import android.app.TabActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;

@@ -69,6 +69,7 @@
             <option value="$PROJECT_DIR$/p75_files" />
             <option value="$PROJECT_DIR$/p76_tab" />
             <option value="$PROJECT_DIR$/p77_tab_intent" />
+            <option value="$PROJECT_DIR$/p78_tab_content_factory" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
