@@ -64,6 +64,7 @@
       <module fileurl="file://$PROJECT_DIR$/p76_tab/p76_tab.iml" filepath="$PROJECT_DIR$/p76_tab/p76_tab.iml" />
       <module fileurl="file://$PROJECT_DIR$/p77_tab_intent/p77_tab_intent.iml" filepath="$PROJECT_DIR$/p77_tab_intent/p77_tab_intent.iml" />
       <module fileurl="file://$PROJECT_DIR$/p78_tab_content_factory/p78_tab_content_factory.iml" filepath="$PROJECT_DIR$/p78_tab_content_factory/p78_tab_content_factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p79_xml_pull_parser/p79_xml_pull_parser.iml" filepath="$PROJECT_DIR$/p79_xml_pull_parser/p79_xml_pull_parser.iml" />
     </modules>
   </component>
 </project>

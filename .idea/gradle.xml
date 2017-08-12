@@ -70,6 +70,7 @@
             <option value="$PROJECT_DIR$/p76_tab" />
             <option value="$PROJECT_DIR$/p77_tab_intent" />
             <option value="$PROJECT_DIR$/p78_tab_content_factory" />
+            <option value="$PROJECT_DIR$/p79_xml_pull_parser" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
