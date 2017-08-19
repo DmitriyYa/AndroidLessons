@@ -71,6 +71,8 @@
             <option value="$PROJECT_DIR$/p77_tab_intent" />
             <option value="$PROJECT_DIR$/p78_tab_content_factory" />
             <option value="$PROJECT_DIR$/p79_xml_pull_parser" />
+            <option value="$PROJECT_DIR$/p80_handler" />
+            <option value="$PROJECT_DIR$/p81_handler_simple_message" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
